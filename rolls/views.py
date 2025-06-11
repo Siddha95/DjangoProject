@@ -3,4 +3,7 @@ from .models import Roll  # Import the Roll model
 # Create your views here.
 def rolls(request):
     rolls = Roll.objects.all()  # Fetch all Roll objects from the database
-    return render(request, 'rolls/rolls.html', {'rolls': rolls} )
+    return render(request, 'rolls/rolls.html', {'rolls': rolls} )   
+
+def contacts(request):
+    return render(request, 'rolls/contacts.html')  # Render the contacts page

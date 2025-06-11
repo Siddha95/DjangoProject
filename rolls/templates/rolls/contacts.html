@@ -25,33 +25,17 @@
             </a>
         </div>
     </nav>
-    <div class="container my-5 text-center" style="max-width:580px">
-        <h1>Football Kits!</h1>
-        <p class="lead">Get the newest football kits from your favorite teams. Whether you're a fan of Barcelona, Real Madrid, or Manchester United, we have the perfect kit for you!</p>
-        </p>
-        <button type="button" class="btn btn-primary">Order now!</button>
-        <a href="/rolls/contacts" type="button" class="btn btn-secondary">Contact us</button>
+    
+<div class="container">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
-
-
-    <div class="container">
-        <div class="row">
-            {% for roll in rolls %}
-            <div class="col-sm">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ roll.immagine.url }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ roll.nome }} Kit</h5>
-                        <p class="card-text">€{{ roll.prezzo }}</p>
-                        <a href="#" class="btn btn-primary">Acquista</a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Ask us what you want</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
-
-
+</div>
 
 
 
